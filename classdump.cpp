@@ -354,5 +354,22 @@ int main(int argc, char **argv)
     cout << interfaces_count <<endl;
     cout <<endl;
 
+    //interfaces
+    cout<< "------Interfaces------"<<endl;
+    for (short i = 0; i < interfaces_count; i ++){
+      short index = getShort(fp);
+      cout << index << "  ";
+    }
+    cout << endl<<endl;
+
+    //fields_count
+    cout<< "------Fields Count------"<<endl;
+    short fields_count = getShort(fp);
+    cout << fields_count <<endl;
+    cout <<endl;
+
+    //fields
+    cout<< "------Fields------"<<endl;
+    
   return 0;
 }
